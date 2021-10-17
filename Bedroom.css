@@ -1,0 +1,151 @@
+body{
+
+    height: 100vh;
+    width: 100%;
+    background-image:  radial-gradient(circle at 0% 0% ,rgba(0,0,0,1),rgba(0,0,0,.5),rgba(0,0,0,.7), rgba(0,0,0,.1)),url(https://images.unsplash.com/photo-1560185893-a55cbc8c57e8?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bW9kZXJuJTIwYmVkcm9vbXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#header i{
+    font-size: 30px;
+    background-color: rgba(0,0,0,.3);
+    box-sizing: border-box;
+    color: white;
+    padding: 4px;
+}
+
+
+
+div #menubar ul li {
+    list-style-type:none;
+    display: inline-block;
+    margin: 0 15px;   
+    top:-43px;
+    position: relative;
+    
+}
+
+div #menubar ul li a{
+    text-transform:uppercase;
+    text-decoration: none;
+    color: lightblue;
+    
+    
+    
+}
+
+div #menubar ul li::after{
+
+    content:'';
+    width:0;
+    height:2px;
+    bottom:-3px;
+    left: 1px;
+    background:blue;
+    position: absolute;
+
+}
+
+div #menubar ul li:hover::after {
+    transition: 1s;
+    width: 99%;
+}
+
+#menubar{
+    float: right;
+    margin-right: 30px;
+}
+
+div #body .fa-globe{
+    margin-left: 9%;
+    margin-top: 5%;
+    font-size: 40px;
+    color: lightblue;
+    
+}
+
+#body p span{
+    font-family:'Akronim', cursive;
+    color: white;
+    font-size: 40px;
+}
+
+.welcome{
+    text-align: center;
+    color: lightcyan;
+    width: 70%;
+    margin: 40px auto auto auto;
+    text-shadow: 3px 3px 8px black;
+}
+
+#welp{
+    font-size: 20px;
+}
+
+.welcome p button{
+    padding: 8px;
+    border-radius: 30%;
+    margin-left: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    background: transparent;
+}
+
+.welcome p button:hover{
+
+    transition: .5s;
+    background: blueviolet;
+    box-shadow: -2px -2px 6px white,2px 2px 6px white;
+
+
+}
+
+#popup:hover {
+
+    transform: rotate(45deg);
+
+}
+
+
+
+@media only screen and ( max-width: 720px){
+    body{
+        background-size: 100% 150vh;
+    }
+    
+    #header {
+        width: 50%;
+        margin: auto;
+        text-align: center;
+    }
+
+    #menubar {
+        width: 100%;
+        display: block;
+        text-align: center;
+        
+    }
+
+    div #menubar ul li{
+        position: static;
+        display: block;
+        margin-top: 8px;
+
+        padding: 3px;
+        background-color: rgb(11, 12, 14);
+        
+        
+    }
+
+    div #menubar ul li::after{
+        bottom: 10 px;
+
+        
+
+    }
+
+
+
+}
